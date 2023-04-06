@@ -30,63 +30,107 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="hero">
-      <h2 class="visually-hidden">Блок приветсвтия</h2>
-      <img class="hero__main-background-image main-background-image" src="img/background-hero.jpg.jpg" width="901" height="389" alt="Горные просторы.">
-      <img class="hero__main-welcome-logo main-welcome-logo" src="img/text-index.svg.svg" width="282" height="214" alt="Welcome Sedona.">
+    <h1 class="visually-hidden">Страница обратной связи</h1>
+    <section class="form-hero">
+      <h2 class="visually-hidden">Блок приветствия</h2>
+      <img class="form-hero__background-image" src="" alt="Горы Седоны.">
+      <img class="form-hero__sedona-logo sedona-logo" src="" alt="Sedona.">
     </section>
-    <section class="introduction">
-      <h2 class="introduction__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="introduction__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="feedback">
+      <h2 class="feedback__title">Оставьте свой отзыв</h2>
+      <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества Седоны</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Настоящий городок</h3>
-          <p class="advantages__number">— №1 —</p>
-          <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
-          <img class="advantages__image image-city" src="img/photo-city.jpg" width="520" height="260" alt="Город Седона.">
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Жилье</h3>
-          <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Сувениры</h3>
-          <p class="advantages__description">Не только китайского, но и местного производства!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <p class="advantages__number">— №2 —</p>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="advantages__image image-bridge" src="img/photo-bridge.jpg" width="520" height="260" alt="Мост дьявола.">
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Небольшая площадь</h3>
-          <p class="advantages__number">— №3 —</p>
-          <p class="advantages__description">Все интересные места находятся очень близко</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Красивая дорога</h3>
-          <p class="advantages__number">— №4 —</p>
-          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Мало туристов</h3>
-          <p class="advantages__number">— №5 —</p>
-          <p class="advantages__description">Большинство едет в Гранд Каньен и толпится там</p>
-        </li>
-      </ul>
-    </section>
-    <section class="subscribe">
-      <h2 class="subscribe__title">Заинтересовались?</h2>
-      <p class="subscribe__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="subscribe__button button">Найти гостиницу</button>
+    <section class="feedback-form">
+      <h2 class="visually-hidden">Форма для оставления отзыва</h2>
+      <form class="feedback-form__form form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form__group">
+          <legend class="form__title">Представьтесь:</legend>
+          <label class="form__label">
+            <span class="form__description">имя*:</span>
+            <input class="form__input" type="text" value="Пётр" name="name">
+          </label>
+          <label class="form__label">
+            <span class="form__description">фамилия*:</span>
+            <input class="form__input" type="text" value="Пустота" name="surname">
+          </label>
+          <label class="form__label">
+            <span class="form__description">отчество:</span>
+            <input class="form__input" type="text" value="Викторович" name="patronymic">
+          </label>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__title">Контактная информация:</legend>
+          <label class="form__label">
+            <span class="form__description">Контактный телефон*:</span>
+            <input class="form__input" type="text" placeholder="Введите телефон" name="telephone">
+            <button class="form__input-button"><span class="visually-hidden">Иконка телефона</span></button>
+          </label>
+          <label class="form__label">
+            <span class="form__description">Электронная почта*:</span>
+            <input class="form__input" type="text" placeholder="Введите e-mail" name="mail">
+            <button class="form__input-button"><span class="visually-hidden">Иконка почты</span></button>
+          </label>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__title">Ваше общее впечатление:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="positive" value="positive" checked>
+                <span class="control__radio"></span>
+                Скорее положительное
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="negative" value="negative">
+                <span class="control__radio"></span>
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="difficult" value="difficult">
+                <span class="control__radio"></span>
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__title">Посещенные достопримечательности</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="bridge" value="bridge" checked>
+                <span class="control__checkbox"></span>
+                Мост Дьявола
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="hill" value="hill" checked>
+                <span class="control__checkbox"></span>
+                Гора-Колокол
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="park" value="park" checked>
+                <span class="control__checkbox"></span>
+                Слайд-парк
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="red" value="red">
+                <span class="control__checkbox"></span>
+                Красные скалы
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
