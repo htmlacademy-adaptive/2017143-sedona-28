@@ -9,7 +9,7 @@
     <a class="main-header__link" href="index.html">
       <img class="main-header__logo logo" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="main-header__main-nav nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__button button">
         <svg class="button__open-popup">
 
@@ -65,13 +65,13 @@
           <label class="form__label">
             <span class="form__description">Контактный телефон*:</span>
             <input class="form__input" type="text" placeholder="Введите телефон" name="telephone">
-            <button class="form__input-button"><span class="visually-hidden">Иконка телефона</span></button>
           </label>
+          <button class="form__input-button" type="button"><span class="visually-hidden">Иконка телефона</span></button>
           <label class="form__label">
             <span class="form__description">Электронная почта*:</span>
             <input class="form__input" type="text" placeholder="Введите e-mail" name="mail">
-            <button class="form__input-button"><span class="visually-hidden">Иконка почты</span></button>
           </label>
+          <button class="form__input-button" type="button"><span class="visually-hidden">Иконка почты</span></button>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__title">Ваше общее впечатление:</legend>
@@ -133,10 +133,12 @@
           </ul>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__title">Опишите свои эмоции:</legend>
-          <textarea class="control__input" placeholder="Опишите подробно все свои восторги" readonly></textarea>
+          <label class="control">
+            <legend class="form__title">Опишите свои эмоции:</legend>
+            <textarea class="control__input" placeholder="Опишите подробно все свои восторги" readonly></textarea>
+          </label>
         </fieldset>
-        <button class="form__button button">Отправить отзыв</button>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
         <span class="form__button-tagging">*-обязательные поля</span>
       </form>
     </section>
@@ -174,17 +176,18 @@
       </a>
     </div>
   </footer>
+
+  <div class="modal-error">
+    <h2 class="modal-error__title">Что то пошло не так!</h2>
+    <p class="modal-error__description">Проверьете поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal-error__button button" type="button">Ок</button>
+  </div>
+
+  <div class="modal-ok">
+    <h2 class="modal-ok__title">Ваш отзыв отправлен!</h2>
+    <p class="modal-ok__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+    <button class="modal-ok__button button" type="button">Закрыть окно</button>
+  </div>
   </body>
 </html>
 
-<div class="modal-error">
-  <h2 class="modal-error__title">Что то пошло не так!</h2>
-  <p class="modal-error__description">Проверьете поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="modal-error__button button" type="button">Ок</button>
-</div>
-
-<div class="modal-ok">
-  <h2 class="modal-ok__title">Ваш отзыв отправлен!</h2>
-  <p class="modal-ok__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
-  <button class="modal-ok__button button" type="button">Закрыть окно</button>
-</div>
