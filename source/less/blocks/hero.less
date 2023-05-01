@@ -8,7 +8,8 @@
 
   .hero__main-background-image {
     width: 320px;
-    height: 100%;
+    height: 389px;
+    object-fit: none;
     display: block;
   }
 
@@ -16,5 +17,43 @@
     position: absolute;
     top: 90px;
     left: 19px;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .hero__main-background-image {
+    width: 768px;
+    height: 518px;
+    object-fit: cover;
+    padding: 0;
+  }
+
+  .hero__main-welcome-logo {
+    width: 461px;
+    height: 350px;
+    top: 77px;
+    left: 153px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    width: 1200px;
+  }
+
+  .hero__main-background-image {
+    width: 1200px;
+  }
+
+  .hero__main-welcome-logo {
+    top: 78px;
+    left: 370px;
   }
 }

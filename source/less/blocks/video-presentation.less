@@ -10,3 +10,32 @@
     font-weight: 700;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .video-presentation {
+    font-size: 21px;
+    padding: 0 60px;
+
+    .video-presentation__title {
+      font-size: 30px;
+    }
+
+    .video-presentation__video {
+      display: block;
+      width: 648px;
+      height: 500px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation {
+    padding: 0 200px;
+
+    .video-presentation__video {
+      display: block;
+      width: 800px;
+      height: 500px;
+    }
+  }
+}

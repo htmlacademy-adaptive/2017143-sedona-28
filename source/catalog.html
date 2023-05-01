@@ -13,18 +13,22 @@
     </a>
     <nav class="main-header__main-nav main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Фото и видео</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">HTML Academy</a>
-        </li>
+        <div class="main-nav__left-list">
+          <li class="main-nav__item">
+           <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+           <a class="main-nav__link" href="#">Фото и видео</a>
+          </li>
+        </div>
+        <div class="main-nav__right-list">
+          <li class="main-nav__item">
+           <a class="main-nav__link" href="form.html">Форма отзыва</a>
+         </li>
+         <li class="main-nav__item">
+           <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </div>
       </ul>
     </nav>
   </header>
@@ -44,38 +48,62 @@
       <ul class="photo-gallery__list">
         <li class="photo-gallery__item">
           <img class="photo-gallery__product-photo" src="img/road.jpg" alt="Закат." width="280" height="280">
-          <h3 class="photo-gallery__title">Народные просторы</h3>
-          <p class="photo-gallery__author">Автор фото: Борис</p>
-          <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
-          <p class="photo-gallery__like-result">1350</p>
+          <div class="photo-gallery__container-card">
+            <div class="photo-gallery__title-container">
+              <h3 class="photo-gallery__title">Народные просторы</h3>
+              <p class="photo-gallery__author">Автор фото: Борис</p>
+            </div>
+            <div class="photo-gallery__like-container">
+              <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
+              <p class="photo-gallery__like-result">1350</p>
+            </div>
+          </div>
         </li>
         <li class="photo-gallery__item">
           <img class="photo-gallery__product-photo" src="img/cactus.jpg" alt="Кактус." width="280" height="280">
-          <h3 class="photo-gallery__title">Местная растительность</h3>
-          <p class="photo-gallery__author">Автор фото: Сергей</p>
-          <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
-          <p class="photo-gallery__like-result">143</p>
+          <div class="photo-gallery__container-card">
+            <div class="photo-gallery__title-container">
+              <h3 class="photo-gallery__title">Местная растительность</h3>
+              <p class="photo-gallery__author">Автор фото: Сергей</p>
+            </div>
+            <div class="photo-gallery__like-container">
+              <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
+              <p class="photo-gallery__like-result">143</p>
+            </div>
+          </div>
         </li>
         <li class="photo-gallery__item">
           <img class="photo-gallery__product-photo" src="img/serpentine.jpg" alt="Серпантин." width="280" height="280">
-          <h3 class="photo-gallery__title">Народные просторы</h3>
-          <p class="photo-gallery__author">Автор фото: Петр</p>
-          <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
-          <p class="photo-gallery__like-result">96</p>
+          <div class="photo-gallery__container-card">
+            <div class="photo-gallery__title-container">
+              <h3 class="photo-gallery__title">Народные просторы</h3>
+              <p class="photo-gallery__author">Автор фото: Петр</p>
+            </div>
+            <div class="photo-gallery__like-container">
+             <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
+              <p class="photo-gallery__like-result">96</p>
+            </div>
+          </div>
         </li>
         <li class="photo-gallery__item">
           <img class="photo-gallery__product-photo" src="img/devil-bridge-catalog.jpg" alt="Мост Дьявола." width="280" height="280">
-          <h3 class="photo-gallery__title">Народные просторы</h3>
-          <p class="photo-gallery__author">Автор фото: Антон</p>
-          <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
-          <p class="photo-gallery__like-result">254</p>
+          <div class="photo-gallery__container-card">
+            <div class="photo-gallery__title-container">
+             <h3 class="photo-gallery__title">Неродные просторы</h3>
+             <p class="photo-gallery__author">Автор фото: Антон</p>
+           </div>
+           <div class="photo-gallery__like-container">
+            <img class="photo-gallery__like" src="img/like-icon.svg" alt="Like.">
+            <p class="photo-gallery__like-result">254</p>
+          </div>
+          </div>
         </li>
       </ul>
     </section>
     <section class="video-presentation">
       <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
       <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="video-presentation__video video" controls height="177" width="280" poster="img/video.jpg">
+      <video class="video-presentation__video video" controls poster="img/video.jpg">
         <source src="#">
       </video>
     </section>
