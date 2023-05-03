@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link  rel="stylesheet" href="css/style.css">
   </head>
@@ -11,34 +12,31 @@
       <img class="main-header__logo logo" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
     <nav class="main-header__main-nav main-nav">
-      <button class="main-nav__button button">
-        <svg class="button__open-popup" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-        </svg>
-      </button>
       <ul class="main-nav__list">
+        <div class="main-nav__left-list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Фото и видео</a>
         </li>
+        </div>
+        <div class="main-nav__right-list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
+        </div>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <section class="hero">
       <h2 class="visually-hidden">Блок приветсвтия</h2>
-      <img class="hero__main-background-image main-background-image" src="img/background-hero.jpg" width="901" height="389" alt="Горные просторы.">
-      <img class="hero__main-welcome-logo main-welcome-logo" src="img/text-index.svg" width="282" height="214" alt="Welcome Sedona.">
+      <img class="hero__main-background-image main-background-image" src="img/background-hero.jpg" alt="Горные просторы.">
+      <img class="hero__main-welcome-logo main-welcome-logo" src="img/text-index.svg" alt="Welcome Sedona.">
     </section>
     <section class="introduction">
       <h2 class="introduction__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -48,40 +46,47 @@
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <h3 class="advantages__title">Настоящий городок</h3>
-          <p class="advantages__number">— №1 —</p>
-          <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages__item-container">
+           <h3 class="advantages__title">Настоящий городок</h3>
+            <p class="advantages__number">— №1 —</p>
+            <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+          </div>
           <img class="advantages__image image-city" src="img/photo-city.jpg" width="520" height="260" alt="Город Седона.">
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item-flex">
+          <img class="advantages__image-house" src="img/icon-house.svg" alt="Дом">
           <h3 class="advantages__title">Жилье</h3>
           <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item-flex">
+          <img class="advantages__image-burger" src="img/icon-burger.svg" alt="Еда">
           <h3 class="advantages__title">Еда</h3>
           <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item-flex">
+          <img class="advantages__image-gift" src="img/icon-gift.svg" alt="Сувениры">
           <h3 class="advantages__title">Сувениры</h3>
           <p class="advantages__description">Не только китайского, но и местного производства!</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <p class="advantages__number">— №2 —</p>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="advantages__item-container">
+           <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <p class="advantages__number">— №2 —</p>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
           <img class="advantages__image image-bridge" src="img/photo-bridge.jpg" width="520" height="260" alt="Мост дьявола.">
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item-inner">
           <h3 class="advantages__title">Небольшая площадь</h3>
           <p class="advantages__number">— №3 —</p>
           <p class="advantages__description">Все интересные места находятся очень близко</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item-inner">
           <h3 class="advantages__title">Красивая дорога</h3>
           <p class="advantages__number">— №4 —</p>
           <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item-inner">
           <h3 class="advantages__title">Мало туристов</h3>
           <p class="advantages__number">— №5 —</p>
           <p class="advantages__description">Большинство едет в Гранд Каньен и толпится там</p>

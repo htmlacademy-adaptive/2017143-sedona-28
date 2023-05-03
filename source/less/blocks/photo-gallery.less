@@ -18,4 +18,126 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  .photo-gallery__like {
+    display: block;
+    width: 23px;
+    height: 21px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-gallery {
+    padding: 0 60px;
+    margin: 0 auto;
+
+    .photo-gallery__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 648px;
+    }
+
+    .photo-gallery__item {
+      display: flex;
+      flex-direction: column;
+      width: 324px;
+      padding: 0;
+      margin: 0;
+
+      .photo-gallery__product-photo {
+        width: 324px;
+        height: 267px;
+      }
+
+      .photo-gallery__container-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 27px 15px 20px;
+        margin: 0;
+        width: 277px;
+        background-color: #EAEAEA;
+      }
+
+      .photo-gallery__title-container {
+        width: 209px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .photo-gallery__like-container {
+        width: min-content;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+    }
+
+    .photo-gallery__item:nth-child(1) {
+      width: 648px;
+
+      .photo-gallery__product-photo {
+        width: 648px;
+        height: 400px;
+      }
+
+      .photo-gallery__container-card {
+        width: 601px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-gallery {
+    padding: 0;
+
+    .photo-gallery__list {
+      width: 1200px;
+    }
+
+    .photo-gallery__item {
+      position: relative;
+      width: 400px;
+
+      .photo-gallery__product-photo {
+        width: 400px;
+        height: 267px;
+      }
+
+      .photo-gallery__container-card {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        padding: 17px 27px 17px 25px;
+        width: 348px;
+        color: #ffffff;
+        background-color: #000000;
+        opacity: 0.3;
+      }
+
+      .photo-gallery__title-container {
+        width: 178px;
+      }
+
+      .photo-gallery__like-container {
+        width: 56px;
+        gap: 9px;
+      }
+    }
+
+    .photo-gallery__item:nth-child(1) {
+      width: 1200px;
+
+      .photo-gallery__product-photo {
+        width: 1200px;
+        height: 400px;
+      }
+
+      .photo-gallery__container-card {
+        width: 1152px;
+        padding: 22px 27px 15px 21px;
+      }
+    }
+  }
 }

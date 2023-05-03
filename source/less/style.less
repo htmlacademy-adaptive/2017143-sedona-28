@@ -28,7 +28,20 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 1200px;
+  }
 }
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
 
 .visually-hidden {
   position: absolute;
@@ -44,7 +57,9 @@ body {
 }
 
 @import url(blocks/main-header.less);
+@import url(blocks/logo.less);
 @import url(blocks/main-nav.less);
+@import url(blocks/page-main.less);
 @import url(blocks/hero.less);
 @import url(blocks/introduction.less);
 @import url(blocks/advantages.less);
