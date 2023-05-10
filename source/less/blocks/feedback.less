@@ -4,23 +4,37 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  width: 280px;
+  margin: 0;
+  padding: 36px 20px 28px;
 
   .feedback__title {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .feedback__description {
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @tablet-width) {
   .feedback {
     width: 436px;
-    padding: 64px 166px 108px 166px;
+    padding: 64px 166px 108px;
     margin: 0;
   }
 
   .feedback__title {
     font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
   }
 }
 
@@ -29,5 +43,9 @@
     width: 436px;
     padding: 115px 382px 68px 382px;
     margin: 0;
+  }
+
+  .feedback__title {
+    margin-bottom: 31px;
   }
 }

@@ -4,14 +4,10 @@
   padding: 0;
   width: 320px;
   min-height: 389px;
+  background-image: url(../../img/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: -290px ;
   background-color: #81B3D2;
-
-  .hero__main-background-image {
-    width: 320px;
-    height: 389px;
-    object-fit: none;
-    display: block;
-  }
 
   .hero__main-welcome-logo {
     position: absolute;
@@ -24,36 +20,29 @@
 @media (min-width: @tablet-width) {
   .hero {
     width: 768px;
+    min-height: 518px;
     margin: 0 auto;
     padding: 0;
-  }
+    background-position: -216px;
+    background-size: cover;
 
-  .hero__main-background-image {
-    width: 768px;
-    height: 518px;
-    object-fit: cover;
-    padding: 0;
-  }
-
-  .hero__main-welcome-logo {
-    width: 461px;
-    height: 350px;
-    top: 77px;
-    left: 153px;
+    .hero__main-welcome-logo {
+      width: 461px;
+      height: 350px;
+      top: 77px;
+      left: 153px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .hero {
     width: 1200px;
-  }
+    background-position: 0;
 
-  .hero__main-background-image {
-    width: 1200px;
-  }
-
-  .hero__main-welcome-logo {
-    top: 78px;
-    left: 370px;
+    .hero__main-welcome-logo {
+      top: 78px;
+      left: 370px;
+    }
   }
 }

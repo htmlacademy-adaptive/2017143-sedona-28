@@ -36,7 +36,6 @@
     <h1 class="visually-hidden">Страница обратной связи</h1>
     <section class="inner-hero">
       <h2 class="visually-hidden">Блок приветствия</h2>
-      <img class="inner-hero__background-image" src="img/back-desktop.jpg" alt="Горы Седоны.">
       <img class="inner-hero__sedona-logo sedona-logo" src="img/SEDONA.svg" alt="Sedona.">
     </section>
     <section class="feedback">
@@ -61,18 +60,22 @@
             <input class="form__input" type="text" value="Викторович" name="patronymic">
           </label>
         </fieldset>
-        <fieldset class="form__group form__group-user">
+        <fieldset class="form__group form__group-contact">
           <legend class="form__title">Контактная информация:</legend>
-          <label class="form__label">
-            <span class="form__description">Контактный телефон*:</span>
-            <input class="form__input" type="text" placeholder="Введите телефон" name="telephone">
-          </label>
-          <button class="form__input-button" type="button"><span class="visually-hidden">Иконка телефона</span></button>
-          <label class="form__label">
-            <span class="form__description">Электронная почта*:</span>
-            <input class="form__input" type="text" placeholder="Введите e-mail" name="mail">
-          </label>
-          <button class="form__input-button" type="button"><span class="visually-hidden">Иконка почты</span></button>
+          <div class="form__label-wrapper">
+            <label class="form__label">
+              <span class="form__description">Контактный телефон*:</span>
+              <input class="form__input" type="tel" placeholder="Введите телефон" name="telephone">
+            </label>
+            <button class="form__input-button-tel" type="button"><span class="visually-hidden">Иконка телефона</span></button>
+          </div>
+          <div class="form__label-wrapper">
+            <label class="form__label">
+              <span class="form__description">Электронная почта*:</span>
+              <input class="form__input" type="text" placeholder="Введите e-mail" name="mail">
+            </label>
+            <button class="form__input-button-mail" type="button"><span class="visually-hidden">Иконка почты</span></button>
+          </div>
         </fieldset>
         <fieldset class="form__group form__group-radio">
           <legend class="form__title">Ваше общее впечатление:</legend>
