@@ -26,10 +26,23 @@
   font-style: normal;
 }
 
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+html {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
 body {
-  font-family: "PT Sans", sans-serif;
   margin: 0 auto;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 #00000033;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -39,9 +52,6 @@ body {
     width: 1200px;
   }
 }
-
-@tablet-width: 768px;
-@desktop-width: 1200px;
 
 .visually-hidden {
   position: absolute;
@@ -67,6 +77,9 @@ body {
 @import url(blocks/main-footer.less);
 @import url(blocks/hashtag.less);
 @import url(blocks/social.less);
+@import url(blocks/link-tg.less);
+@import url(blocks/link-vk.less);
+@import url(blocks/link-youtube.less);
 @import url(blocks/html-academy.less);
 @import url(blocks/main-inner.less);
 @import url(blocks/inner-hero.less);

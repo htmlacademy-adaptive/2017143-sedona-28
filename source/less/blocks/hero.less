@@ -1,20 +1,36 @@
 .hero {
   position: relative;
   margin: 0 auto;
+  margin-top: -167px;
   padding: 0;
   width: 320px;
   min-height: 389px;
   background-image: url(../../img/background-hero.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: -290px ;
   background-color: #81B3D2;
+
+  .hero__wrapper {
+    width: 100%;
+    height: 389px;
+    background-image: url(../../img/tie.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
 
   .hero__main-welcome-logo {
     position: absolute;
     top: 90px;
     left: 19px;
   }
+}
 
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/back-desktop@2x.jpg);
+    background-size: cover;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -25,6 +41,10 @@
     padding: 0;
     background-position: -216px;
     background-size: cover;
+
+    .hero__wrapper {
+      height: 518px;
+    }
 
     .hero__main-welcome-logo {
       width: 461px;
