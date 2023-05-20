@@ -91,11 +91,14 @@
         flex-direction: column;
       }
 
+      .photo-gallery__like {
+        margin-right: 9px;
+      }
+
       .photo-gallery__like-container {
-        width: min-content;
+        width: max-content;
         display: flex;
         align-items: center;
-        gap: 9px;
         margin: 0;
         padding: 0;
       }
@@ -157,9 +160,12 @@
         width: 178px;
       }
 
+      .photo-gallery__like {
+        color: #ffffff;
+      }
+
       .photo-gallery__like-container {
-        width: 56px;
-        gap: 9px;
+        width: max-content;
       }
     }
 
@@ -183,14 +189,6 @@
       .photo-gallery__container-card {
         background-color: #0000004d ;
       }
-    }
-
-    .photo-gallery__like {
-      display: block;
-      color: #ffffff;
-      width: 23px;
-      height: 21px;
-      object-fit: cover;
     }
   }
 }
