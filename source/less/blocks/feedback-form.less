@@ -56,7 +56,7 @@
       }
 
       .form__input:focus {
-        outline: none;
+        outline: 3px solid #83b3d3;
       }
 
       .form__input:active {
@@ -127,7 +127,7 @@
     }
 
     .form__input[type="number"]::-webkit-outer-spin-button,
-    .form__input[type="number"]::-webkit-inner-spin-button {
+    .form__input[type="number"]::-webkit-inner-spin-button{
 	    display: none;
     }
 
@@ -136,7 +136,7 @@
     }
 
     .form__input:focus {
-      outline: none;
+      outline: 3px solid #83b3d3;
     }
 
     .form__input:active {
@@ -177,6 +177,10 @@
       border: none;
     }
 
+    .form__input-button-tel:focus {
+      outline: 3px solid #83b3d3;
+    }
+
     .form__input-button-mail {
       position: absolute;
       bottom: 0;
@@ -192,6 +196,10 @@
       margin: 0;
       padding: 0;
       border: none;
+    }
+
+    .form__input-button-mail:focus {
+      outline: 3px solid #83b3d3;
     }
   }
 
@@ -256,6 +264,10 @@
 
     .form__control-input[type="radio"]:hover + .form__control-radio {
       background-color: #e5e5e5;
+    }
+
+    .form__control-input[type="radio"]:focus + .form__control-radio {
+      outline: 3px solid #83b3d3;
     }
 
     .form__control-input[type="radio"]:active + .form__control-radio {
@@ -325,6 +337,10 @@
       background-color: #e5e5e5;
     }
 
+    .form__control-input[type="checkbox"]:focus + .form__control-checkbox {
+      outline: 3px solid #83b3d3;
+    }
+
     .form__control-input[type="checkbox"]:active + .form__control-checkbox {
       background-color: #d5d5d5;
     }
@@ -372,7 +388,7 @@
     }
 
     .form__control-text:focus {
-      outline: none;
+      outline: 3px solid #83b3d3;
     }
 
     .form__control-text:active {
