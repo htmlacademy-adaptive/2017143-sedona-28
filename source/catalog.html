@@ -6,28 +6,26 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon32x32.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
   <header class="main-header">
     <a class="main-header__link" href="index.html">
-      <svg class="main-header__logo logo" width="185" height="96">
-        <use xlink:href="img/sprite.svg#main-logo"></use>
-      </svg>
+      <img class="main-header__logo logo" src="img/logo.svg" alt="Логотип Седона.">
     </a>
     <nav class="main-header__main-nav main-nav">
       <ul class="main-nav__list">
           <li class="main-nav__item">
-           <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-           <a class="main-nav__link main-nav__link--current" href="#">Фото и видео</a>
+            <a class="main-nav__link main-nav__link--current" href="#">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-           <a class="main-nav__link" href="form.html">Форма отзыва</a>
-         </li>
-         <li class="main-nav__item">
-           <a class="main-nav__link" href="#">HTML Academy</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--shadow" href="#">HTML Academy</a>
           </li>
       </ul>
     </nav>
@@ -37,9 +35,7 @@
     <section class="inner-hero">
       <div class="inner-hero__wrapper">
         <h2 class="visually-hidden">Блок приветствия</h2>
-        <svg class="inner-hero__sedona-logo sedona-logo" width="229" height="39">
-          <use xlink:href="img/sprite.svg#inner-hero-logo"></use>
-        </svg>
+        <img class="inner-hero__sedona-logo sedona-logo" src="img/SEDONA.svg" width="229" height="39" alt="Седона.">
       </div>
     </section>
     <section class="introduction">
@@ -51,9 +47,9 @@
       <ul class="photo-gallery__list">
         <li class="photo-gallery__item">
           <picture class="photo-gallery__product-photo">
-            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-            <img class="photo-gallery__product-photo" src="img/road.jpg" srcset="img/photo-1-mobile.jpg@2x.jpg 2x" alt="Закат." width="280" height="280">
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+            <img class="photo-gallery__product-photo" src="img/road.webp" srcset="img/photo-1-mobile.jpg@2x.webp 2x" alt="Закат." width="280" height="280">
           </picture>
           <div class="photo-gallery__container-card">
             <div class="photo-gallery__title-container">
@@ -62,7 +58,7 @@
             </div>
             <div class="photo-gallery__like-container">
               <svg class="photo-gallery__like" width="22" height="20">
-                <use xlink:href="img/sprite.svg#photo-gallery__like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <p class="photo-gallery__like-result">1350</p>
             </div>
@@ -70,9 +66,9 @@
         </li>
         <li class="photo-gallery__item">
           <picture class="photo-gallery__product-photo">
-            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <img class="photo-gallery__product-photo" src="img/cactus.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактус." width="280" height="280">
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x">
+            <img class="photo-gallery__product-photo" src="img/cactus.webp" srcset="img/photo-2-mobile@2x.webp 2x" alt="Кактус." width="280" height="280">
           </picture>
           <div class="photo-gallery__container-card">
             <div class="photo-gallery__title-container">
@@ -81,7 +77,7 @@
             </div>
             <div class="photo-gallery__like-container">
               <svg class="photo-gallery__like" width="22" height="20">
-                <use xlink:href="img/sprite.svg#photo-gallery__like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <p class="photo-gallery__like-result">143</p>
             </div>
@@ -89,9 +85,9 @@
         </li>
         <li class="photo-gallery__item">
           <picture class="photo-gallery__product-photo">
-            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-            <img class="photo-gallery__product-photo" src="img/serpentine.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Серпантин." width="280" height="280">
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x">
+            <img class="photo-gallery__product-photo" src="img/serpentine.webp" srcset="img/photo-3-mobile@2x.webp 2x" alt="Серпантин." width="280" height="280">
           </picture>
           <div class="photo-gallery__container-card">
             <div class="photo-gallery__title-container">
@@ -100,7 +96,7 @@
             </div>
             <div class="photo-gallery__like-container">
               <svg class="photo-gallery__like" width="22" height="20">
-                <use xlink:href="img/sprite.svg#photo-gallery__like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <p class="photo-gallery__like-result">96</p>
             </div>
@@ -108,21 +104,21 @@
         </li>
         <li class="photo-gallery__item">
           <picture class="photo-gallery__product-photo">
-            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-            <img class="photo-gallery__product-photo" src="img/devil-bridge-catalog.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост Дьявола." width="280" height="280">
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x">
+            <img class="photo-gallery__product-photo" src="img/devil-bridge-catalog.webp" srcset="img/photo-4-mobile@2x.webp 2x" alt="Мост Дьявола." width="280" height="280">
           </picture>
           <div class="photo-gallery__container-card">
             <div class="photo-gallery__title-container">
-             <h3 class="photo-gallery__title">Неродные просторы</h3>
-             <p class="photo-gallery__author">Автор фото: Антон</p>
-           </div>
-           <div class="photo-gallery__like-container">
-            <svg class="photo-gallery__like" width="22" height="20">
-              <use xlink:href="img/sprite.svg#photo-gallery__like"></use>
-            </svg>
-            <p class="photo-gallery__like-result">254</p>
-          </div>
+              <h3 class="photo-gallery__title">Неродные просторы</h3>
+              <p class="photo-gallery__author">Автор фото: Антон</p>
+            </div>
+            <div class="photo-gallery__like-container">
+              <svg class="photo-gallery__like" width="22" height="20">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <p class="photo-gallery__like-result">254</p>
+            </div>
           </div>
         </li>
       </ul>
@@ -132,11 +128,18 @@
         <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
         <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, im/video-tablet@2x.jpg 2x">
-          <img class="video-presentation__video" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеоролик." width="280" height="177">
+      <div class="video-presentation__video--wrapper">
+        <picture class="video-presentation__video">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <img class="video-presentation__video" src="img/video-mobile.webp" srcset="img/video-mobile@2x.webp 2x" alt="Видеоролик." width="280" height="177">
         </picture>
+        <button class="video-presentation__play-button">
+          <svg class="video-presentation__play" width="48" height="54">
+            <use xlink:href="img/sprite.svg#video-play"></use>
+          </svg>
+        </button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -146,17 +149,17 @@
     <div class="social">
       <a class="social__link-vk link-vk" href="#">
         <svg class="link-vk__icon" width="48" height="48">
-          <use xlink:href="img/sprite.svg#link-vk"></use>
+          <use xlink:href="img/sprite.svg#vk"></use>
         </svg>
       </a>
       <a class="social__link-tg link-tg" href="#">
         <svg class="link-tg__icon" width="48" height="48">
-          <use xlink:href="img/sprite.svg#link-tg"></use>
+          <use xlink:href="img/sprite.svg#tg"></use>
         </svg>
       </a>
       <a class="social__link-youtube link-youtube" href="#">
         <svg class="link-youtube__icon" width="48" height="48">
-          <use xlink:href="img/sprite.svg#link-youtube"></use>
+          <use xlink:href="img/sprite.svg#youtube"></use>
         </svg>
       </a>
     </div>

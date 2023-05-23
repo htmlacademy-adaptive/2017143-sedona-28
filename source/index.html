@@ -6,16 +6,14 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon32x32.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/style.min.css">
 
   </head>
   <body>
 
   <header class="main-header">
     <a class="main-header__link" href="#">
-      <svg class="main-header__logo logo" width="185" height="96">
-        <use xlink:href="img/sprite.svg#main-logo"></use>
-      </svg>
+      <img class="main-header__logo logo" src="img/logo.svg" alt="Логотип Седона.">
     </a>
     <nav class="main-header__main-nav main-nav">
       <ul class="main-nav__list">
@@ -29,7 +27,7 @@
           <a class="main-nav__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">HTML Academy</a>
+          <a class="main-nav__link main-nav__link--shadow" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -38,9 +36,7 @@
     <section class="hero">
       <div class="hero__wrapper">
         <h2 class="visually-hidden">Блок приветсвтия</h2>
-        <svg class="hero__main-welcome-logo main-welcome-logo" width="282" height="214">
-          <use xlink:href="img/sprite.svg#main-welcome-logo"></use>
-        </svg>
+        <img class="hero__main-welcome-logo main-welcome-logo" src="img/text-index.svg" width="282" height="214" alt="Логотип приветствия.">
       </div>
     </section>
     <section class="introduction">
@@ -51,14 +47,14 @@
       <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages__real-city">
           <div class="advantages__real-city-container">
-           <h3 class="advantages__title">Настоящий городок</h3>
+            <h3 class="advantages__title">Настоящий городок</h3>
             <p class="advantages__number">— №1 —</p>
             <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-              <img class="advantages__image image-city" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg" width="520" height="260" alt="Город Седона.">
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <img class="advantages__image image-city" src="img/photo-city.webp" srcset="img/photo-city@2x.webp" width="520" height="260" alt="Город Седона.">
             </picture>
         </div>
         <div class="advantages__opportunitie">
@@ -79,14 +75,14 @@
         </div>
         <div class="advantages__bridge">
           <div class="advantages__bridge-container">
-           <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="advantages__image image-bridge" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg" width="520" height="260" alt="Мост дьявола.">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <img class="advantages__image image-bridge" src="img/photo-bridge.webp" srcset="img/photo-bridge@2x.webp" width="520" height="260" alt="Мост дьявола.">
             </picture>
         </div>
         <div class="advantages__inner">
@@ -99,7 +95,7 @@
             <li class="advantages__inner-item">
               <h3 class="advantages__title">Красивая дорога</h3>
               <p class="advantages__number">— №4 —</p>
-             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__inner-item">
               <h3 class="advantages__title">Мало туристов</h3>
@@ -122,17 +118,17 @@
     <div class="social">
       <a class="social__link-vk link-vk" href="#">
         <svg class="link-vk__icon" width="48" height="48">
-          <use xlink:href="img/sprite.svg#link-vk"></use>
+          <use xlink:href="img/sprite.svg#vk"></use>
         </svg>
       </a>
       <a class="social__link-tg link-tg" href="#">
         <svg class="link-tg__icon" width="48" height="48">
-          <use xlink:href="img/sprite.svg#link-tg"></use>
+          <use xlink:href="img/sprite.svg#tg"></use>
         </svg>
       </a>
       <a class="social__link-youtube link-youtube" href="#">
         <svg class="link-youtube__icon" width="48" height="48">
-          <use xlink:href="img/sprite.svg#link-youtube"></use>
+          <use xlink:href="img/sprite.svg#youtube"></use>
         </svg>
       </a>
     </div>
