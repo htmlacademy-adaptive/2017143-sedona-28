@@ -1,95 +1,29 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@tablet-width: 768px;
-@desktop-width: 1200px;
-
-html {
-  height: 100%;
-  background-color: #f2f2f2;
-}
-
-body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  font-family: "PT Sans", "Arial", sans-serif;
-  color: #000000;
-  background-color: #ffffff;
-  box-shadow: 0 0 15px 0 #00000033;
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@import "blocks/main-header.less";
-@import "blocks/logo.less";
-@import "blocks/main-nav.less";
-@import "blocks/page-main.less";
-@import "blocks/hero.less";
-@import "blocks/introduction.less";
-@import "blocks/advantages.less";
-@import "blocks/subscribe.less";
-@import "blocks/map.less";
-@import "blocks/main-footer.less";
-@import "blocks/hashtag.less";
-@import "blocks/social.less";
-@import "blocks/link-vk.less";
-@import "blocks/link-tg.less";
-@import "blocks/link-youtube.less";
-@import "blocks/html-academy.less";
-@import "blocks/main-inner.less";
-@import "blocks/inner-hero.less";
-@import "blocks/feedback.less";
-@import "blocks/feedback-form.less";
-@import "blocks/modal-error.less";
-@import "blocks/modal-ok.less";
-@import "blocks/main-catalog.less";
-@import "blocks/intoduction-catalog.less";
-@import "blocks/photo-gallery.less";
-@import "blocks/video-presentation.less";
-@import "blocks/button.less";
+@import url("blocks/global.less");
+@import url("blocks/main-header.less");
+@import url("blocks/logo.less");
+@import url("blocks/main-nav.less");
+@import url("blocks/page-main.less");
+@import url("blocks/hero.less");
+@import url("blocks/introduction.less");
+@import url("blocks/advantages.less");
+@import url("blocks/subscribe.less");
+@import url("blocks/map.less");
+@import url("blocks/main-footer.less");
+@import url("blocks/hashtag.less");
+@import url("blocks/social.less");
+@import url("blocks/link-vk.less");
+@import url("blocks/link-tg.less");
+@import url("blocks/link-youtube.less");
+@import url("blocks/html-academy.less");
+@import url("blocks/main-inner.less");
+@import url("blocks/inner-hero.less");
+@import url("blocks/feedback.less");
+@import url("blocks/feedback-form.less");
+@import url("blocks/form.less");
+@import url("blocks/modal-error.less");
+@import url("blocks/modal-ok.less");
+@import url("blocks/main-catalog.less");
+@import url("blocks/intoduction-catalog.less");
+@import url("blocks/photo-gallery.less");
+@import url("blocks/video-presentation.less");
+@import url("blocks/button.less");
