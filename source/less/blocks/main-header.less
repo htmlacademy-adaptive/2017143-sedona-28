@@ -1,17 +1,31 @@
 .main-header {
+  position: relative;
   margin: 0 auto;
   z-index: 1;
   width: 320px;
   background-color: #ffffff;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
-
+//Кнопка открытия бургерного меню
+.main-header__button {
+  position: absolute;
+  top: 17px;
+  right: 20.1px;
+  display: none;
+  width: 22.9px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+//Планшетная версия
 @media (min-width: @tablet-width) {
   .main-header {
     position: relative;
@@ -21,7 +35,7 @@
     line-height: 21px;
   }
 }
-
+//Десктопная версия
 @media (min-width: @desktop-width) {
   .main-header {
     width: 1200px;

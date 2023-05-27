@@ -4,160 +4,319 @@
   text-transform: uppercase;
   background-color: #ffffff;
   color: #000000;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+//Перенос строки
+.advantages__title-transfer {
+  display: none;
+}
+
+.advantages__number {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages__transfer {
+  display: none;
+}
+
+.advantages__image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 260px;
+}
+
+.advantages__real-city {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #81b3d2;
+}
+
+.advantages__real-city-container {
+  width: 284px;
+  margin: 0;
+  padding: 54px 18px 40px;
+
+  .advantages__title,
+  .advantages__description,
+  .advantages__number {
+    color: #ffffff;
+  }
+}
+
+.advantages__opportunitie {
+  width: 284px;
+  margin: 0;
+  padding: 23px 18.5px 46px;
+}
+
+.advantages__inner {
+  width: 284px;
+  margin: 0;
+  padding: 24px 18px 28px;
+  background-color: #eeeeee;
+
+  .advantages__description {
+    width: 254px;
+  }
+}
+
+.advantages__opportunitie-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__opportunitie-item {
+  width: 284px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   .advantages__title {
+    width: 237px;
     margin: 0;
-    margin-bottom: 11px;
+    margin-top: 8px;
+    margin-left: 47px;
     padding: 0;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-  }
-
-  .advantages__number {
-    margin: 0;
-    margin-bottom: 17px;
-    padding: 0;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
+    text-align: left;
   }
 
   .advantages__description {
+    width: 237px;
     margin: 0;
+    margin-top: 16px;
+    margin-left: 46.5px;
     padding: 0;
+    text-align: left;
+  }
+}
+
+.advantages__opportunitie-house {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-position: 1.58px 0.5px;
+}
+
+.advantages__opportunitie-food {
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 2.55px 0;
+  background-size: 40px 35px;
+}
+
+.advantages__opportunitie-souvenir {
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 4px;
+  background-size: 32px 38px;
+}
+
+.advantages__bridge {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #81b3d2;
+}
+
+.advantages__bridge-container {
+  width: 284px;
+  margin: 0;
+  padding: 37px 18px;
+
+  .advantages__title,
+  .advantages__description,
+  .advantages__number {
+    color: #ffffff;
+  }
+}
+
+.advantages__inner-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+}
+
+.advantages__inner-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 284px;
+  margin: 0;
+  padding: 0;
+}
+//Планшетная версия
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 768px;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+  }
+
+  .advantages__number {
     font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
+    line-height: 10px;
   }
 
   .advantages__transfer {
+    display: inline-block;
+  }
+
+  .advantages__real-city-transfer {
     display: none;
   }
 
   .advantages__image {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    height: 260px;
+    width: 512px;
+    height: 256px;
+    object-fit: cover;
   }
 
   .advantages__real-city {
-    width: 320px;
-    margin: 0;
-    padding: 0;
-    background-color: #81b3d2;
+    display: flex;
+    width: 768px;
   }
 
   .advantages__real-city-container {
-    width: 284px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 190px;
     margin: 0;
-    padding: 54px 18px 40px;
+    padding: 52px 33px 31px;
 
     .advantages__title,
     .advantages__description,
     .advantages__number {
-      color: #ffffff;
+      margin: 0;
+      padding: 0;
     }
   }
 
   .advantages__opportunitie {
-    width: 284px;
-    margin: 0;
-    padding: 23px 18px 46px;
+    width: 768px;
+    padding: 0;
   }
 
   .advantages__inner {
-    width: 284px;
+    width: 768px;
     margin: 0;
-    padding: 24px 18px 28px;
-    background-color: #eeeeee;
+    padding: 0;
+
+    .advantages__description {
+      width: 190px;
+    }
   }
 
   .advantages__opportunitie-list {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .advantages__opportunitie-item {
-    width: 284px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 24px;
+    width: 190px;
+    padding: 158px 33px 60px;
 
     .advantages__title {
-      width: 237px;
+      width: 190px;
       margin: 0;
-      margin-top: 8px;
-      margin-left: 47px;
       padding: 0;
-      text-align: left;
+      text-align: center;
     }
 
     .advantages__description {
-      width: 237px;
+      width: 180px;
       margin: 0;
-      margin-top: 16px;
-      margin-left: 47px;
       padding: 0;
-      text-align: left;
+      text-align: center;
     }
   }
 
   .advantages__opportunitie-house {
-    background-image: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
-    background-position: 1.58px 0.5px;
+    background-position: 88.46px 60px;
+    background-size: 154.06px 144px;
   }
 
   .advantages__opportunitie-food {
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-    background-position: 2.55px 0;
-    background-size: 40px 35px;
+    background-position: 86.83px 62px;
+    background-size: 80.22px 67.9px;
+
+    .advantages__description {
+      width: 155px;
+    }
   }
 
   .advantages__opportunitie-souvenir {
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 1px 4px;
-    background-size: 32px 38px;
+    background-position: 98.47px 64px;
+    background-size: 66.51px 75px;
   }
 
   .advantages__bridge {
-    width: 320px;
-    margin: 0;
-    padding: 0;
-    background-color: #81b3d2;
+    display: flex;
+    width: 768px;
   }
 
   .advantages__bridge-container {
-    width: 284px;
-    margin: 0;
-    padding: 37px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    order: 2;
+    width: 190px;
+    padding: 52px 33px 31px;
 
     .advantages__title,
     .advantages__description,
     .advantages__number {
-      color: #ffffff;
+      margin: 0;
+      padding: 0;
     }
   }
 
   .advantages__inner-list {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 49px;
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
   }
 
   .advantages__inner-item {
@@ -165,243 +324,120 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 284px;
+    gap: 35px;
+    width: 190px;
     margin: 0;
-    padding: 0;
-  }
-}
+    padding: 41px 33px;
 
-@media (min-width: @tablet-width) {
-  .advantages {
-    width: 768px;
-
-    .advantages__title {
-      font-size: 21px;
-    }
-
+    .advantages__title,
+    .advantages__description,
     .advantages__number {
-      font-size: 14px;
-      line-height: 10px;
-    }
-
-    .advantages__transfer {
-      display: inline-block;
-    }
-
-    .advantages__image {
-      width: 512px;
-      height: 256px;
-      object-fit: cover;
-    }
-
-    .advantages__real-city {
-      display: flex;
-      width: 768px;
-    }
-
-    .advantages__real-city-container {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      width: 190px;
-      margin: 0;
-      padding: 52px 33px 31px;
-
-      .advantages__title,
-      .advantages__description,
-      .advantages__number {
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    .advantages__opportunitie {
-      width: 768px;
-      padding: 0;
-    }
-
-    .advantages__inner {
-      width: 768px;
       margin: 0;
       padding: 0;
-    }
-
-    .advantages__opportunitie-list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .advantages__opportunitie-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-      width: 190px;
-      padding: 158px 33px 60px;
-
-      .advantages__title {
-        width: 190px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      .advantages__description {
-        width: 180px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-    }
-
-    .advantages__opportunitie-house {
-      background-position: 88.46px 60px;
-      background-size: 154.06px 144px;
-    }
-
-    .advantages__opportunitie-food {
-      background-position: 86.83px 62px;
-      background-size: 80.22px 67.9px;
-
-      .advantages__description {
-        width: 155px;
-      }
-    }
-
-    .advantages__opportunitie-souvenir {
-      background-position: 98.47px 64px;
-      background-size: 66.51px 75px;
-    }
-
-    .advantages__bridge {
-      display: flex;
-      width: 768px;
-    }
-
-    .advantages__bridge-container {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      order: 2;
-      width: 190px;
-      padding: 52px 33px 31px;
-
-      .advantages__title,
-      .advantages__description,
-      .advantages__number {
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    .advantages__inner-list {
-      width: 768px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0;
-    }
-
-    .advantages__inner-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 35px;
-      width: 190px;
-      margin: 0;
-      padding: 41px 33px;
-
-      .advantages__title,
-      .advantages__description,
-      .advantages__number {
-        margin: 0;
-        padding: 0;
-      }
     }
   }
 }
-
+//Десктопная версия
 @media (min-width: @desktop-width) {
   .advantages {
     width: 1200px;
+  }
 
-    .advantages__title {
-      font-size: 21px;
-    }
+  .advantages__title-transfer {
+    display: inline-block;
+  }
 
-    .advantages__image {
-      width: 800px;
-    }
+  .advantages__image {
+    width: 800px;
+  }
 
-    .advantages__real-city {
-      width: 1200px;
-    }
+  .advantages__real-city {
+    width: 1200px;
+  }
 
-    .advantages__real-city-container {
-      display: flex;
-      flex-direction: column;
-      gap: 37.5px;
+  .advantages__real-city-transfer {
+    display: inline-block;
+  }
+
+  .advantages__real-city-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24.5px;
+    width: 300px;
+    margin: 0;
+    padding: 52px 50px 51px;
+  }
+
+  .advantages__opportunitie {
+    width: 1200px;
+  }
+
+  .advantages__inner {
+    width: 1200px;
+
+    .advantages__description {
       width: 300px;
-      margin: 0;
-      padding: 52px 50px 51px;
     }
+  }
 
-    .advantages__opportunitie {
-      width: 1200px;
+  .advantages__inner-item:nth-child(2) {
+    .advantages__description {
+      width: 270px;
     }
+  }
 
-    .advantages__inner {
-      width: 1200px;
-    }
+  .advantages__opportunitie-item {
+    width: 300px;
+    padding: 169px 50px 60px;
+    gap: 12px;
 
-    .advantages__opportunitie-item {
+    .advantages__title,
+    .advantages__description {
       width: 300px;
-      padding: 169px 50px 60px;
-      gap: 12px;
-
-      .advantages__title,
-      .advantages__description {
-        width: 300px;
-      }
     }
+  }
 
-    .advantages__opportunitie-house {
-      background-position: 159.57px 69px;
-      background-size: 158.94px 144.8px;
-    }
+  .advantages__opportunitie-house {
+    background-position: 159.57px 69px;
+    background-size: 158.94px 144.8px;
+  }
 
-    .advantages__opportunitie-food {
-      background-position: 162.14px 72px;
-      background-size: 73.04px 68.9px;
-    }
+  .advantages__opportunitie-food {
+    background-position: 162.14px 72px;
+    background-size: 73.04px 68.9px;
+  }
 
-    .advantages__opportunitie-souvenir {
-      background-position: 159.43px 69px;
-      background-size: 77.46px 75.02px;
-    }
+  .advantages__opportunitie-souvenir {
+    background-position: 159.43px 69px;
+    background-size: 77.46px 75.02px;
+  }
 
-    .advantages__bridge {
-      display: flex;
-      width: 1200px;
-    }
+  .advantages__bridge {
+    display: flex;
+    width: 1200px;
+  }
 
-    .advantages__bridge-container {
-      display: flex;
-      flex-direction: column;
-      gap: 37.5px;
-      width: 300px;
-      margin: 0;
-      padding: 52px 50px 51px;
-    }
+  .advantages__bridge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24.5px;
+    width: 300px;
+    margin: 0;
+    padding: 52px 50px 51px;
 
-    .advantages__inner-list {
-      width: 1200px;
+    .advantages__description {
+      width: 220px;
     }
+  }
 
-    .advantages__inner-item {
-      gap: 37px;
-      width: 300px;
-      padding: 52px 50px;
-    }
+  .advantages__inner-list {
+    width: 1200px;
+  }
+
+  .advantages__inner-item {
+    gap: 37px;
+    width: 300px;
+    padding: 52px 50px;
   }
 }
