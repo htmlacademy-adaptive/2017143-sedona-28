@@ -35,9 +35,9 @@ const html = () => {
 
 //scripts
 const scripts = () => {
-return gulp.src('source/js/script.js')
-.pipe(gulp.dest('build/js'))
-.pipe(browser.stream());
+  return gulp.src('source/js/script.js')
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
@@ -93,7 +93,7 @@ const copy = (done) => {
 //Clean
 const clean = () => {
   return del('build');
-  };
+};
 
 // Server
 const server = (done) => {
@@ -106,7 +106,7 @@ const server = (done) => {
   ui: false,
   });
   done();
-  }
+}
 
 //Reload
 const reload = (done) => {
@@ -150,4 +150,5 @@ export default gulp.series(
   gulp.series(
   server,
   watcher
-  ));
+  )
+);

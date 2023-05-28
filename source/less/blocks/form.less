@@ -5,7 +5,7 @@
 }
 
 .form__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
   text-align: center;
@@ -13,9 +13,13 @@
 }
 
 .form__description {
+  padding: 0;
+  padding-left: 16px;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -23,10 +27,10 @@
   color: #0000004d;
 }
 
-.form__group-user--wrapper {
+.form__group-user-wrapper {
   position: relative;
   width: 280px;
-  padding: 39px 20px 24px;
+  padding: 24px 20px 39px;
   margin: 0 auto;
 }
 
@@ -39,7 +43,7 @@
   background-color: #e5e5e5;
   content: "";
 }
-
+//Юзер мобилка
 .form__group-user {
   display: flex;
   flex-direction: column;
@@ -65,10 +69,6 @@
   }
 
   .form__input:focus {
-    outline: 3px solid #83b3d3;
-  }
-
-  .form__input:active {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
   }
@@ -83,12 +83,12 @@
     padding: 0;
   }
 
-  .form__label:nth-of-type(3n) {
-    margin-bottom: 39px;
+  .form__label:nth-last-of-type(1) {
+    margin-bottom: 0;
   }
 }
 
-.form__group-contact--wrapper {
+.form__group-contact-wrapper {
   position: relative;
   width: 280px;
   padding: 24px 20px 34px;
@@ -104,7 +104,7 @@
   background-color: #e5e5e5;
   content: "";
 }
-
+//Контакты мобилка
 .form__group-contact {
   display: flex;
   flex-direction: column;
@@ -130,10 +130,6 @@
   }
 
   .form__input:focus {
-    outline: 3px solid #83b3d3;
-  }
-
-  .form__input:active {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
   }
@@ -171,10 +167,6 @@
     border: none;
   }
 
-  .form__input-button-tel:focus {
-    outline: 3px solid #83b3d3;
-  }
-
   .form__input-button-mail {
     position: absolute;
     bottom: 0;
@@ -191,10 +183,6 @@
     padding: 0;
     border: none;
   }
-
-  .form__input-button-mail:focus {
-    outline: 3px solid #83b3d3;
-  }
 }
 
 .form__input[type="number"]::-webkit-outer-spin-button,
@@ -202,10 +190,10 @@
   display: none;
 }
 
-.form__group-radio--wrapper {
+.form__group-radio-wrapper {
   position: relative;
   width: 280px;
-  padding: 24px 20px;
+  padding: 24px 20px 8px;
   margin: 0 auto;
 }
 
@@ -218,7 +206,7 @@
   background-color: #e5e5e5;
   content: "";
 }
-
+//Радио мобилка
 .form__group-radio {
   width: 280px;
   margin: 0;
@@ -235,9 +223,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     color: #000000;
-    padding-left: 16px;
+    padding-left: 62px;
     margin-bottom: 16px;
     min-height: 46px;
   }
@@ -266,18 +253,14 @@
   }
 
   .form__control-input[type="radio"]:focus + .form__control-radio {
-    outline: 3px solid #83b3d3;
-  }
-
-  .form__control-input[type="radio"]:active + .form__control-radio {
     background-color: #d5d5d5;
   }
 }
 
-.form__group-checkbox--wrapper {
+.form__group-checkbox-wrapper {
   position: relative;
   width: 280px;
-  padding: 24px 20px;
+  padding: 24px 20px 8px;
   margin: 0 auto;
 }
 
@@ -290,11 +273,11 @@
   background-color: #e5e5e5;
   content: "";
 }
-
+//Чекбоксы мобилка
 .form__group-checkbox {
   width: 280px;
   margin: 0;
-  padding: 24px 0;
+  padding: 0;
   border: none;
 
   .form__list {
@@ -308,7 +291,7 @@
     display: flex;
     align-items: center;
     color: #000000;
-    padding-left: 58px;
+    padding-left: 62px;
     margin-bottom: 16px;
     min-height: 46px;
   }
@@ -337,15 +320,11 @@
   }
 
   .form__control-input[type="checkbox"]:focus + .form__control-checkbox {
-    outline: 3px solid #83b3d3;
-  }
-
-  .form__control-input[type="checkbox"]:active + .form__control-checkbox {
     background-color: #d5d5d5;
   }
 }
 
-.form__group-text--wrapper {
+.form__group-text-wrapper {
   position: relative;
   width: 280px;
   padding: 24px 20px 56px;
@@ -361,45 +340,40 @@
   background-color: #e5e5e5;
   content: "";
 }
-
+//Текстарея мобилка
 .form__group-text {
   width: 280px;
   margin: 0;
   padding: 0;
   border: none;
-
-  .form__control-text {
-    width: 248px;
-    min-height: 118px;
-    margin: 0;
-    padding: 16px;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    background-color: #f2f2f2;
-    resize: none;
-    border: none;
-  }
-
-  .form__control-text:hover {
-    background-color: #e5e5e5;
-  }
-
-  .form__control-text:focus {
-    outline: 3px solid #83b3d3;
-  }
-
-  .form__control-text:active {
-    background-color: #ffffff;
-    outline: 4px solid #e5e5e5;
-  }
-
-  .form__control-text::placeholder {
-    color: #0000004d;
-  }
 }
 
+.form__control-text {
+  width: 248px;
+  min-height: 118px;
+  margin: 0;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  resize: none;
+  border: none;
+}
+
+.form__control-text:hover {
+  background-color: #e5e5e5;
+}
+
+.form__control-text:focus {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
+.form__control-text::placeholder {
+  color: #0000004d;
+}
+//Кнопки формы мобилка
 .form__button-container {
   display: flex;
   flex-direction: column;
@@ -407,34 +381,34 @@
   width: 280px;
   margin: 0 auto;
   padding: 0;
-
-  .form__button {
-    width: 280px;
-    padding: 16px;
-    margin: 0;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-  }
-
-  .form__button-tagging {
-    margin: 0;
-    margin-left: auto;
-    margin-top: 3px;
-    font-size: 12px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #33333399;
-  }
 }
 
+.form__button {
+  width: 280px;
+  padding: 16px;
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.form__button-tagging {
+  margin: 0;
+  margin-left: auto;
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #33333399;
+}
+//Планшетная версия
 @media (min-width: @tablet-width) {
   .form__title {
     font-size: 21px;
     margin-bottom: 28px;
   }
 
-  .feedback-form__form {
+  .form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -443,11 +417,11 @@
     width: 648px;
   }
 
-  .form__group-user--wrapper {
+  .form__group-user-wrapper {
     position: relative;
     width: 295px;
     padding: 0;
-    padding-right: 29px;
+    padding-right: 28.5px;
     padding-bottom: 63px;
     margin: 0;
   }
@@ -458,7 +432,7 @@
     width: 1px;
     height: 338px;
   }
-
+  //Юзер планшет
   .form__group-user {
     box-sizing: border-box;
     width: 295px;
@@ -482,11 +456,11 @@
     }
   }
 
-  .form__group-contact--wrapper {
+  .form__group-contact-wrapper {
     position: relative;
     width: 295px;
     padding: 0;
-    padding-left: 29px;
+    padding-left: 28.5px;
     padding-bottom: 63px;
     margin: 0;
   }
@@ -494,7 +468,7 @@
   .form__group-contact::before {
     display: none;
   }
-
+  //Контакты планшет
   .form__group-contact {
     box-sizing: border-box;
     width: 295px;
@@ -524,11 +498,10 @@
     align-items: flex-start;
   }
 
-  .form__group-radio--wrapper {
+  .form__group-radio-wrapper {
     position: relative;
     width: 575px;
-    padding: 0 36px 48px;
-    padding-bottom: 63px;
+    padding: 0 36px 32px;
     margin: 0;
   }
 
@@ -538,7 +511,7 @@
     width: 123px;
     height: 1px;
   }
-
+  //Радио планшет
   .form__group-radio {
     position: relative;
     margin: 0;
@@ -569,11 +542,11 @@
     }
   }
 
-  .form__group-checkbox--wrapper {
+  .form__group-checkbox-wrapper {
     position: relative;
     width: 480px;
     padding: 0 84px;
-    padding-bottom: 63px;
+    padding-bottom: 26px;
     margin: 0;
   }
 
@@ -583,7 +556,7 @@
     width: 123px;
     height: 1px;
   }
-
+  //Чекбоксы планшет
   .form__group-checkbox {
     position: relative;
     margin: 0;
@@ -618,7 +591,7 @@
     }
   }
 
-  .form__group-text--wrapper {
+  .form__group-text-wrapper {
     position: relative;
     width: 648px;
     padding: 0;
@@ -632,7 +605,7 @@
     width: 123px;
     height: 1px;
   }
-
+  //Текстарея планшет
   .form__group-text {
     position: relative;
     margin: 0;
@@ -659,12 +632,13 @@
       font-weight: 700;
     }
   }
-
+  //Кнопки формы планшет
   .form__button-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 648px;
+    margin-bottom: 64px;
 
     .form__button {
       display: flex;
@@ -678,14 +652,18 @@
     }
   }
 }
-
+//Десктопная версия
 @media (min-width: @desktop-width) {
   .form {
     padding: 0 120px;
     width: 960px;
   }
 
-  .form__group-user--wrapper {
+  .form__title {
+    margin-bottom: 28px;
+  }
+
+  .form__group-user-wrapper {
     position: relative;
     width: 430px;
     padding: 0;
@@ -699,7 +677,7 @@
     width: 1px;
     height: 338px;
   }
-
+  //Юзер десктоп
   .form__group-user {
     width: 430px;
 
@@ -712,14 +690,14 @@
     }
   }
 
-  .form__group-contact--wrapper {
+  .form__group-contact-wrapper {
     position: relative;
     width: 430px;
     padding: 0;
     margin: 0;
     margin-bottom: 71px;
   }
-
+  //Контакты десктоп
   .form__group-contact {
     width: 430px;
 
@@ -736,19 +714,19 @@
     }
   }
 
-  .form__group-radio--wrapper {
+  .form__group-radio-wrapper {
     position: relative;
     width: 854px;
     padding: 0 53px;
     margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
   }
 
   .form__group-radio::before {
     width: 280px;
     left: -53px;
   }
-
+  //Радио десктоп
   .form__group-radio {
     margin: 0;
     padding: 0;
@@ -760,24 +738,30 @@
     }
   }
 
-  .form__group-checkbox--wrapper {
+  .form__group-checkbox-wrapper {
     position: relative;
     width: 871px;
     padding: 0 44.5px;
     margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 71px;
   }
 
   .form__group-checkbox::before {
     width: 280px;
+    top: -85px;
     left: -44.5px;
   }
-
+  //Чекбокс десктоп
   .form__group-checkbox {
     padding: 0;
     width: 871px;
 
+    .form__title {
+      margin-bottom: 59px;
+    }
+
     .form__list::before {
+      top: -85px;
       right: -44.5px;
       width: 280px;
     }
@@ -787,7 +771,7 @@
     }
   }
 
-  .form__group-text--wrapper {
+  .form__group-text-wrapper {
     position: relative;
     width: 768px;
     padding: 0 96px;
@@ -798,7 +782,7 @@
     width: 280px;
     left: -96px;
   }
-
+  //Текстарея десктоп
   .form__group-text {
     margin: 0;
     padding: 0;
@@ -816,11 +800,11 @@
       padding: 16px;
     }
   }
-
+  //Кнопки формы десктоп
   .form__button-container {
     width: 768px;
     margin: 0;
-    padding: 48px 96px 0 96px;
+    padding: 48px 96px 64px;
   }
 
   .form__button {
