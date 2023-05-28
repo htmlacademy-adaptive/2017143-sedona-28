@@ -21,6 +21,10 @@
   display: none;
 }
 
+.advantages__description-transfer {
+  display: none;
+}
+
 .advantages__number {
   margin: 0;
   margin-bottom: 17px;
@@ -64,7 +68,7 @@
 .advantages__real-city-container {
   width: 284px;
   margin: 0;
-  padding: 54px 18px 40px;
+  padding: 70px 18px 40px;
 
   .advantages__title,
   .advantages__description,
@@ -76,7 +80,7 @@
 .advantages__opportunitie {
   width: 284px;
   margin: 0;
-  padding: 23px 18.5px 46px;
+  padding: 23px 18.5px 19px;
 }
 
 .advantages__inner {
@@ -98,6 +102,7 @@
 
 .advantages__opportunitie-item {
   width: 284px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,20 +129,20 @@
 .advantages__opportunitie-house {
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
-  background-position: 1.58px 0.5px;
+  background-position: 0 0.5px;
 }
 
 .advantages__opportunitie-food {
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
-  background-position: 2.55px 0;
+  background-position: 0 1px;
   background-size: 40px 35px;
 }
 
 .advantages__opportunitie-souvenir {
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
-  background-position: 1px 4px;
+  background-position: 3px 0;
   background-size: 32px 38px;
 }
 
@@ -151,7 +156,7 @@
 .advantages__bridge-container {
   width: 284px;
   margin: 0;
-  padding: 37px 18px;
+  padding: 39px 18px 37px;
 
   .advantages__title,
   .advantages__description,
@@ -172,7 +177,6 @@
 .advantages__inner-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   width: 284px;
@@ -194,12 +198,20 @@
     line-height: 10px;
   }
 
+  .advantages__title-transfer {
+    display: inline-block;
+  }
+
   .advantages__transfer {
     display: inline-block;
   }
 
   .advantages__real-city-transfer {
     display: none;
+  }
+
+  .advantages__description-transfer {
+    display: inline-block;
   }
 
   .advantages__image {
@@ -216,15 +228,20 @@
   .advantages__real-city-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     width: 190px;
     margin: 0;
     padding: 52px 33px 31px;
 
     .advantages__title,
-    .advantages__description,
+    .advantages__description {
+      margin: 0;
+      padding: 0;
+    }
+
     .advantages__number {
       margin: 0;
+      margin-bottom: 7px;
       padding: 0;
     }
   }
@@ -255,7 +272,8 @@
     align-items: center;
     gap: 24px;
     width: 190px;
-    padding: 158px 33px 60px;
+    padding: 157px 33px 60px;
+    margin: 0;
 
     .advantages__title {
       width: 190px;
@@ -273,12 +291,13 @@
   }
 
   .advantages__opportunitie-house {
-    background-position: 88.46px 60px;
+    background-position: 88.46px 56px;
     background-size: 154.06px 144px;
   }
 
   .advantages__opportunitie-food {
-    background-position: 86.83px 62px;
+    padding: 154px 33px 61px;
+    background-position: 86.83px 61px;
     background-size: 80.22px 67.9px;
 
     .advantages__description {
@@ -287,6 +306,7 @@
   }
 
   .advantages__opportunitie-souvenir {
+    padding: 151.5px 33px 64px;
     background-position: 98.47px 64px;
     background-size: 66.51px 75px;
   }
@@ -299,15 +319,20 @@
   .advantages__bridge-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     order: 2;
     width: 190px;
     padding: 52px 33px 31px;
 
     .advantages__title,
-    .advantages__description,
+    .advantages__description {
+      margin: 0;
+      padding: 0;
+    }
+
     .advantages__number {
       margin: 0;
+      margin-bottom: 7px;
       padding: 0;
     }
   }
@@ -322,16 +347,26 @@
   .advantages__inner-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 20px;
     width: 190px;
     margin: 0;
     padding: 41px 33px;
 
-    .advantages__title,
-    .advantages__description,
+    .advantages__title {
+      width: min-content;
+      margin: 0;
+      padding: 0;
+    }
+
     .advantages__number {
+      margin: 0;
+      margin-bottom: 9px;
+      padding: 0;
+    }
+
+    .advantages__description:nth-last-of-type(2) {
+      width: 175px;
       margin: 0;
       padding: 0;
     }
@@ -362,10 +397,14 @@
   .advantages__real-city-container {
     display: flex;
     flex-direction: column;
-    gap: 24.5px;
+    gap: 20px;
     width: 300px;
     margin: 0;
     padding: 52px 50px 51px;
+
+    .advantages__number {
+      margin-bottom: 8px;
+    }
   }
 
   .advantages__opportunitie {
@@ -389,7 +428,7 @@
   .advantages__opportunitie-item {
     width: 300px;
     padding: 169px 50px 60px;
-    gap: 12px;
+    gap: 25px;
 
     .advantages__title,
     .advantages__description {
@@ -398,11 +437,12 @@
   }
 
   .advantages__opportunitie-house {
-    background-position: 159.57px 69px;
+    background-position: 159.57px 66px;
     background-size: 158.94px 144.8px;
   }
 
   .advantages__opportunitie-food {
+    padding: 166px 50px 71px;
     background-position: 162.14px 72px;
     background-size: 73.04px 68.9px;
   }
@@ -421,10 +461,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24.5px;
+    gap: 20px;
     width: 300px;
     margin: 0;
     padding: 52px 50px 51px;
+
+    .advantages__number {
+      margin-bottom: 8px;
+    }
 
     .advantages__description {
       width: 220px;
@@ -436,8 +480,12 @@
   }
 
   .advantages__inner-item {
-    gap: 37px;
+    gap: 20px;
     width: 300px;
     padding: 52px 50px;
+
+    .advantages__number {
+      margin-bottom: 8px;
+    }
   }
 }

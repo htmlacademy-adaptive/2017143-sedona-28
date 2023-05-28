@@ -16,6 +16,7 @@
   padding: 0;
   padding-left: 16px;
   margin: 0;
+  margin-bottom: 1px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -78,8 +79,10 @@
   }
 
   .form__label {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     padding: 0;
   }
 
@@ -91,7 +94,7 @@
 .form__group-contact-wrapper {
   position: relative;
   width: 280px;
-  padding: 24px 20px 34px;
+  padding: 25px 20px 34px;
   margin: 0 auto;
 }
 
@@ -111,6 +114,14 @@
   border: none;
   padding: 0;
   margin: 0;
+
+  .form__title {
+    margin-bottom: 16px;
+  }
+
+  .form__description {
+
+  }
 
   .form__input {
     font-size: 16px;
@@ -142,7 +153,7 @@
     position: relative;
     width: 280px;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     padding: 0;
   }
 
@@ -193,7 +204,7 @@
 .form__group-radio-wrapper {
   position: relative;
   width: 280px;
-  padding: 24px 20px 8px;
+  padding: 25px 20px 8px;
   margin: 0 auto;
 }
 
@@ -260,7 +271,7 @@
 .form__group-checkbox-wrapper {
   position: relative;
   width: 280px;
-  padding: 24px 20px 8px;
+  padding: 25px 20px 8px;
   margin: 0 auto;
 }
 
@@ -327,7 +338,7 @@
 .form__group-text-wrapper {
   position: relative;
   width: 280px;
-  padding: 24px 20px 56px;
+  padding: 24px 20px 48px;
   margin: 0 auto;
 }
 
@@ -346,6 +357,10 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  .form__title {
+    margin-bottom: 22px;
+  }
 }
 
 .form__control-text {
@@ -380,6 +395,7 @@
   align-items: flex-end;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -396,7 +412,7 @@
   margin: 0;
   margin-left: auto;
   margin-top: 3px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #33333399;
@@ -422,7 +438,7 @@
     width: 295px;
     padding: 0;
     padding-right: 28.5px;
-    padding-bottom: 63px;
+    padding-bottom: 61px;
     margin: 0;
   }
 
@@ -437,6 +453,10 @@
     box-sizing: border-box;
     width: 295px;
 
+    .form__description {
+      margin-bottom: 1px;
+    }
+
     .form__input {
       width: 263px;
       margin: 0;
@@ -447,7 +467,7 @@
 
     .form__label {
       margin: 0;
-      margin-bottom: 16px;
+      margin-bottom: 15px;
       padding: 0;
     }
 
@@ -472,6 +492,10 @@
   .form__group-contact {
     box-sizing: border-box;
     width: 295px;
+
+    .form__title {
+      margin-bottom: 27px;
+    }
 
     .form__label {
       width: 295px;
@@ -596,11 +620,11 @@
     width: 648px;
     padding: 0;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 41px;
   }
 
   .form__group-text::before {
-    top: -40.5px;
+    top: -41.5px;
     left: 0;
     width: 123px;
     height: 1px;
@@ -612,6 +636,10 @@
     padding: 0;
     width: 648px;
     border: none;
+
+    .form__title {
+      margin-bottom: 30px;
+    }
 
     .form__title::before {
       position: absolute;
@@ -648,7 +676,8 @@
     }
 
     .form__button-tagging {
-      font-size: 14px;
+      font-size: 18px;
+      line-height: 26px;
     }
   }
 }
@@ -668,7 +697,7 @@
     width: 430px;
     padding: 0;
     margin: 0;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
   }
 
   .form__group-user::before {
@@ -719,11 +748,12 @@
     width: 854px;
     padding: 0 53px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .form__group-radio::before {
     width: 280px;
+    top: -59px;
     left: -53px;
   }
   //Радио десктоп
@@ -732,8 +762,22 @@
     padding: 0;
     width: 854px;
 
+    .form__title {
+      margin-bottom: 45px;
+    }
+
+    .form__control {
+      width: 185px;
+      margin-right: 0;
+    }
+
+    .form__item {
+      width: 246px;
+    }
+
     .form__list::before {
-      right: -53px;
+      top: -59px;
+      right: -54px;
       width: 280px;
     }
   }
@@ -748,7 +792,7 @@
 
   .form__group-checkbox::before {
     width: 280px;
-    top: -85px;
+    top: -86px;
     left: -44.5px;
   }
   //Чекбокс десктоп
@@ -757,11 +801,11 @@
     width: 871px;
 
     .form__title {
-      margin-bottom: 59px;
+      margin-bottom: 60px;
     }
 
     .form__list::before {
-      top: -85px;
+      top: -86px;
       right: -44.5px;
       width: 280px;
     }
@@ -789,6 +833,15 @@
     width: 768px;
     border: none;
 
+    .form__title {
+      margin-bottom: 28px;
+    }
+
+    .form__control {
+      display: block;
+      max-height: 160px;
+    }
+
     .form__title::before {
       width: 280px;
       right: -96px;
@@ -805,9 +858,13 @@
     width: 768px;
     margin: 0;
     padding: 48px 96px 64px;
-  }
 
-  .form__button {
-    width: 384px;
+    .form__button {
+      width: 384px;
+    }
+
+    .form__button-tagging {
+      margin-top: 4px;
+    }
   }
 }

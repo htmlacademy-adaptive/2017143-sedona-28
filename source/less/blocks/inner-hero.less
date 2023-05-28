@@ -4,9 +4,10 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: url("../img/background-hero.jpg");
+  background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: -291px;
+  background-size: cover;
+  background-position: -171px 40px;
 
   .inner-hero__wrapper {
     height: 158px;
@@ -23,13 +24,16 @@
 }
 //Ретинизация фоновой картинки
 @media (min-resolution: 2dppx) {
-  background-image: url("../img/back-desktop@2x.jpg");
+  .inner-hero {
+    background-image: url("../img/back-desktop@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
   .inner-hero {
     width: 768px;
     min-height: 290px;
+    background-position: -220px -224px;
 
     .inner-hero__wrapper {
       height: 290px;
