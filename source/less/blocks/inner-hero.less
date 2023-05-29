@@ -4,10 +4,10 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: url("../img/back-desktop.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/back-mobile.jpg");
   background-size: cover;
-  background-position: -171px 40px;
+  background-repeat: no-repeat;
+  background-position: top center;
 
   .inner-hero__wrapper {
     height: 158px;
@@ -23,7 +23,13 @@
   }
 }
 //Ретинизация back-desktop
-@media (min-resolution: 2dppx) {
+@media (min-width: @mobile-width) and (min-resolution: 2dppx) {
+  .inner-hero {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
   .inner-hero {
     background-image: url("../img/back-desktop@2x.jpg");
   }
@@ -33,7 +39,9 @@
   .inner-hero {
     width: 768px;
     min-height: 290px;
-    background-position: -220px -224px;
+    background-image: url("../img/back-desktop.jpg");
+    background-size: auto;
+    background-position: bottom center;
 
     .inner-hero__wrapper {
       height: 290px;
@@ -52,7 +60,8 @@
   .inner-hero {
     width: 1200px;
     min-height: 301px;
-    background-position: 0;
+    background-size: cover;
+    background-position: bottom center;
 
     .inner-hero__wrapper {
       height: 301px;
